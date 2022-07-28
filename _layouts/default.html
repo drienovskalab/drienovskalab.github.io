@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" class="h-100">
+
+  {%- include head.html -%}
+
+  <!-- <body class="d-flex flex-column vw-100 vh-100 g-0"> -->
+  <body class="d-flex flex-column h-100 g-0">
+
+    {%- include header.html -%}
+
+    <main class="flex-shrink-0" aria-label="Content">
+
+      {% if page.banner %}
+      <div class="container-fluid">
+
+        <div class="text-center w-100">
+          <img class="img-fluid" src="{{ page.banner | relative_url }}">
+        </div>
+
+      </div>
+      {% endif %}
+
+      {{ content }}
+
+    </main>
+
+    {%- include footer.html -%}
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>

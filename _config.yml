@@ -1,1 +1,25 @@
-theme: jekyll-theme-slate
+
+title: DrienovskaLab @ VU
+description: >-
+  The non-natural protein catalysis group (Drienovska lab) is situated at the Vrije Universiteit Amsterdam in the Netherlands. 
+baseurl: "" 
+url: "" 
+
+author:
+  name: 'Ivana Drienovska'
+  email: 'i.drienovska@vu.nl'
+
+date_format: "%b %-d, %Y"
+
+collections_dir: collections
+
+collections: 
+  - publications
+  - members
+  - projects
+
+bootstrap:
+  header_pages:
+   - research.markdown
+   - members.markdown
+   - contact.markdown

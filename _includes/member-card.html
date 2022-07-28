@@ -1,0 +1,21 @@
+{% assign p = include.person %}
+<div class="card border-0">
+  <div class="row g-0">
+    <div class="col-6 col-md-3 align-self-top bg-light p-3">
+      <div class="ratio ratio-1x1">
+        <img src="{{ p.image | default: "/assets/bootstrap-icons/icons/person-circle.svg" | relative_url }}" class="img-fluid rounded-circle" alt="profile image" role="img">
+      </div>
+    </div>
+    <div class="col-12 col-md-9">
+      <div class="card-body">
+        <div class="card-title">
+          <h5>{{ p.name }}</h5>
+          <h6 class="text-muted">{{ p.job_title | default: p.position | upcase }}</h6>
+        </div>
+        <div class="card-text">
+          {{ p.content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
