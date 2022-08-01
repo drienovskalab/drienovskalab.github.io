@@ -25,7 +25,6 @@ bootstrap:
    - members.markdown
    - contact.markdown
 
-theme: jekyll-bootstrap-theme
 plugins: 
   - jekyll-feed
   - jekyll-seo-tag
