@@ -9,8 +9,6 @@ author:
   name: 'Ivana Drienovska'
   email: 'i.drienovska@vu.nl'
 
-date_format: "%b %-d, %Y"
-
 collections_dir: collections
 
 collections: 
@@ -19,7 +17,15 @@ collections:
   - projects
 
 bootstrap:
+
+  date_format: "%b %-d, %Y"
+
   header_pages:
    - research.markdown
    - members.markdown
    - contact.markdown
+
+theme: jekyll-bootstrap-theme
+plugins: 
+  - jekyll-feed
+  - jekyll-seo-tag

@@ -11,11 +11,9 @@
     <main class="flex-shrink-0" aria-label="Content">
 
       {% if page.banner %}
-      <div class="container-fluid">
+      <div class="container-fluid text-center px-0">
 
-        <div class="text-center w-100">
-          <img class="img-fluid" src="{{ page.banner | relative_url }}">
-        </div>
+        <img class="img-fluid" src="{{ page.banner | relative_url }}">
 
       </div>
       {% endif %}
